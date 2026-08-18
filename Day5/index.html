@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
+<style>
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  header {
+    background: rgb(32, 32, 87);
+    padding: 20px;
+    text-align: center;
+  }
+  header a{
+    color: white;
+    background: rgb(115, 115, 227);
+    padding: 10px;
+    margin:4px;
+    border-radius: 10px;
+  }
+
+  .s1{
+    height:600px;
+    background-image: linear-gradient(rgb(0, 0, 0,0.5), rgb(0,0,0,0.5)),
+    url("https://plus.unsplash.com/premium_photo-1661877737564-3dfd7282efcb?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y3NzfGVufDB8fDB8fHww");
+    background-size: 100% 100%;
+    color: white;
+    text-align: center;
+    padding-top: 200px;
+  }
+  .s2{
+    height: 550px;
+    padding:100px;
+    background: whitesmoke;
+    text-align: center;
+  }
+  .s2>div>div{
+    display: inline-block;
+    padding: 90px;
+    margin: 10px;
+    width:20%;
+    color:white;
+    border-radius: 10px;
+  }
+
+  .s3{
+    height: 550px;
+    background: whitesmoke;
+  }
+  .s3>div>div{
+    display: inline-block;
+    padding: 50px;
+    margin: 10px;
+    width:30%;
+        color:black;
+        border-radius: 10px;
+        background:white;
+        border: 2px solid blue;
+  }
+  .s3 h3{
+    color: blue;
+  }
+
+  h3.hover{
+    color: red;
+    border: 2px dotted blue;
+    transition: all 1s;
+  }
+
+  .card:hover{
+    transition: all 1s;
+    transform: rotate(-20deg);
+    transform: scale(1.5);
+    transform: scale(0.5);
+    transform: scale(0.5);
+    transform:translate(0px,-10px) ;
+
+  }
+  .s4{
+   width: 60%;
+   margin: auto;
+   padding: 20px;
+   height: 500px;
+  }
+  .s4 p{
+    
+  }
+</style>
+</head>
+<body>
+  <header>
+    <a href="">Home</a>
+    <a href="">About</a>
+    <a href="">Services</a>
+    <a href="">Contact</a>
+  </header>
+  <section class="s1">
+    <h1>Learn CSS through Projects</h1>
+    <p>This Project demonstrates CSS Usage </p>
+  </section>
+
+  <section class="s2">
+    <h1>CSS Colors</h1>
+    <div>
+      <div style="background:rgb(207, 34, 34);">Red</div>
+      <div style="background:rgb(30, 165, 30)">Green</div>
+      <div style="background:blue">Blue</div>
+      <div style="background:rgb(69, 15, 69)">Violet</div>
+    </div>
+
+  </section>
+
+  <section class ="s3">
+    <h1>CSS Box Model</h1>
+    <div>
+      <div class="card">
+        <h3>Card one</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora non magni minima officia beatae, earum alias consectetur corporis odit aliquid harum officiis mollitia repellendus repudiandae dicta molestias quaerat eveniet. Sunt.</p>
+      </div>
+      
+      <div class="card">
+        <h3>Card two</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur temporibus rerum possimus voluptatum, enim iusto, voluptate minus, quod magni iste accusantium! Quia modi sint culpa. Amet facere incidunt omnis ea.</p>
+      </div>
+
+       <div class="card">
+        <h3>Card three</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, provident. Tempore voluptatem tenetur velit eveniet laboriosam iste et corrupti, deserunt aspernatur. Inventore ad odit quaerat voluptatem facere </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="s4">
+    <h1>CSS Fonts</h1>
+    <p style="font-weight: 300;">Light font weight(300)</p>
+    <p style="font-weight: 400;">normal font weight(400)</p>
+    <p style="font-weight: 700;">bold font weight(700)</p>
+  </section>
+
+</body>
+</html>

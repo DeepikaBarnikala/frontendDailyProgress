@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+     css - cascading style sheets
+     it is a style sheet language that is used to describe the presentation of a webpage 
+     such as colors,fonts,texts,animations,layouts and responsiveness
+
+     3 ways to insert css
+     1)inline css
+     styles are added to element itself using style attribute
+     css is full of properties and values
+     <h1 style="color:red;background:black">heading 1</h1>
+
+     2)internal css
+     it used style tag to represent the properties
+
+     selectors:
+     it is used to traget the html elemnts for applying styles
+     selector{
+     properties
+     }
+
+     3)external css:
+     styles aree the added to external css file 
+     can be linked using link rel tag
+
+     types of selectors:
+     1)simple
+        a) tagname
+        h2{
+            color:aqua;
+            background-color: green;
+        }
+        b) class selector
+         .el1{
+            color: blueviolet;
+        }
+        <h2 class="el1">heading 2</h2>
+        c) id selectors
+        it is denoted by #
+        it is used to aplly to styles 
+
+     1)combinators
+     2)pseudo 
+    -->
+     <link rel="stylesheet" href="demo.css">
+    <style>
+        div{
+            background:blue
+        }
+        .el1{
+            color: blueviolet;
+        }
+        .el2{
+            background:black;
+            color:white
+        }
+        #demo{
+            color:violet
+        }
+    </style>
+    <div style="background:rgb(224, 205, 205)">div container</div>
+    <h1 class="el1 el2" id="demo">heading 1</h1>
+    <h2 class="el2">heading 2</h2>
+    <h3>heading 3</h3>
+    <h4 class="el1">heading 4</h4>
+
+</body>
+</html>

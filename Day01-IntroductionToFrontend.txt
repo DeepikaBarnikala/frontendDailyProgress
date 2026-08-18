@@ -1,0 +1,24 @@
+html
+elements open and closing
+type of tags-pair tag , self closing tag
+headings
+paragraph
+list tags-ordered and unordered
+relative and absolute
+anchor tag-external and internal routing
+image tag- alt   
+tables -- table, tr, td and th
+
+day3:
+task:
+name
+email
+password
+confirm password
+gender
+dob
+country
+agree checkbox
+register now button
+
+day4:
