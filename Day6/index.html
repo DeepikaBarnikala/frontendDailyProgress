@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* css flexbox: It is used to create 1-d layout model web pages, 
+    it contains parent properties(flex-container) and child properties(flex items)
+
+    1) display: flex;-- it will create container and change the direction into row
+
+    2) flex- direction; -- it will control direction of the flex items
+    flex-direction:row;
+    flex-direction:column;
+    flex-direction:column-reverse;
+    flex-direction:row-reverse;
+
+    3) justify-content: ;
+    it will control the item on main axis
+    justify-content: center;
+    justify-content: end;
+    justify-content: start;
+    justify-content: space-between;
+    justify-content: space-evenly;
+    justify-content: space-around;
+
+    4) align-items - 
+        align-items: center;
+        align-items: stretch;
+        align-items: end;
+        align-items: start;
+
+    5)flex-wrap - it will wrap the items to the next row
+        flex-wrap : wrap
+        flex-wrap : wrap-reverse
+
+    */
+  .parent{
+    display:flex;
+    flex-direction:column;
+    flex-direction:row-reverse;
+    flex-direction:column-reverse;
+    flex-direction:row;
+    justify-content: center;
+    justify-content: end;
+    justify-content: start;
+    justify-content: space-between;
+    justify-content: space-evenly;
+    justify-content: space-around;
+
+    background: rgb(241, 152, 204);
+    height: 670px;
+    align-items: center;
+    align-items: stretch;
+    align-items: end;
+    align-items: start;
+
+    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
+
+    align-content: center;
+    align-content: start;
+    align-content: end;
+    align-content:space-between ;
+    align-content:space-evenly ;
+    align-content:space-around ;
+    gap: 30px;
+
+    
+  }
+
+  .child{
+    background: rgb(190, 215, 223);
+    padding: 20px;
+    flex-basis: 20%;
+    width:20%;
+  }
+
+  header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  ul{
+    display: flex;
+    gap:20px;
+  }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Business title</h1>
+    <ul>
+      <li>Home</li>
+      <li>About</li>
+      <li>Services</li>
+    </ul>
+  </header>
+
+  <div class = "parent">
+    <div class="child">content 1</div>
+    <div class="child">content 2</div>
+    <div class="child">content 3</div>
+    <div class="child">content 4</div>
+    <div class="child">content 5</div>
+    <div class="child">content 6</div>
+    <div class="child">content 7</div>
+    <div class="child">content 8</div>
+  </div>
+</body>
+</html>
