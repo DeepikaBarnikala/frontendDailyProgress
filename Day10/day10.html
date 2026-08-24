@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button onclick="console.log('inline.js')">click me</button>
+
+
+  <script> 
+  // console.log('hello world from internal') 
+  //   var a= 10;
+  //   let b=20;
+  //   const c=30;
+  //   console.log(a, b, c)
+  //   var a;
+  //   console.log(a)
+  //   var b;
+  //   b=20;
+  //   console.log(b)
+  //   var c=39;
+  //   console.log(c)
+
+  //   console.log(d)
+
+  //   console.log(e)
+  //   var e=90;
+    
+  // string
+    var str='hello world';
+    str[0]='s'
+    console.log(str[0])
+
+   // int
+    var a=10
+    var b=20
+    var c=30
+    console.log(a,b,c)
+
+    // boolean
+    var isadmin=true;
+    var premiumuser=true;
+    var student=false;
+    console.log(isadmin, premiumuser, student)
+
+    var arr = [1, 'hello', true, false, null]
+                console.log(arr)
+                console.log(arr[1])
+                console.log(arr[-1]) // undefined
+            console.log(typeof(arr))
+
+   var data=[4,25,30]
+   var obj={
+    batchno:4,
+    count:25,
+    days:30,
+    stack:'python'
+   }
+   console.log(obj)
+  obj.stack='python fullstack'
+
+  // 1st dot notation
+  console.log(obj.stack);
+
+  //2nd- sqtare bracket notation
+  console.log(obj['days'])
+  
+  // functions
+  function greet(){
+    console.log('welcome to the webpage')
+  }
+  greet()
+
+  var a=19
+  var b='deepika'
+  var c=true
+  console.log(typeof(a))
+  console.log(typeof(b))
+  console.log(typeof(c))
+    
+  </script>
+
+   
+</body>
+</html>
+
+<!-- 
+html
+    css
+    bootstrap
+
+    static website
+    dynamic website -- validation, add_to_cart, login, signup, logout, payment, search, filter, sort
+
+    javascript - dynamic nature to interaction
+    -> javascript is a highlevel interpreted programming language. 
+    ->It is a client side scripting language. 
+    ->It is used to make the website dynamic and interactive.
+
+    variables - var, let, const
+    data types - string, number, boolean, null, undefined, object, array
+    conditional statements - if, else if, else, switch
+    control statements - for, while, do while, break, continue
+    functions - function declaration, function expression, arrow function
+    methods - string methods, array methods, object methods
+
+    how to insert js:
+    1)inline js - <button onclick="console.log('inline.js')">click me</button> - cntrl+shift+j -- console tab
+    2)internal js - <script> console.log('hello world from internal') </script>
+    3)external js - <script src="script.js"></script> -- create a separate file named 'script.js' in the same directory
+
+    Variables: variables are like containers which is used to store the data and the data could be anything.
+    -> variables are defined with var, let, const keyworsds followed by variable name followed by value
+
+    var=10;
+    let b=20;
+    const c=30;
+    console.log(a, b, c)
+
+     variable terms:
+
+    declaration -- allocating a memory to the variable
+    var a;
+
+    undefined -- variable is declared but not assigned a value
+    console.log(a); // undefined
+
+    assignment -- assigning a value to the variable
+    var b;
+    b = 20;
+    console.log(b); // 20
+
+    initialization -- declaration and assignment in a single line
+    var c= 30; // declaration and assignment in a single line
+    console.log(c); // 30
+
+    unexisting variable -- variable is not declared and not assigned a value
+    console.log(d); // ReferenceError: d is not defined
+
+    hoisting:
+    it is a behaviour in js where the declaration of a variable
+    and functions are moved to top even before execution 
+
+    console.log(a) //undefines
+    var a;
+
+    Datatypes 
+        1. Premitive - which stores the single values, which are immutable, Which are get by value aand post by value, stores in stack
+            i. strings: It is a collection of characters that are enclosed in '', "" or ``
+                Strings are immutable
+                ex:
+                var str = 'hello world'
+                console.log(str)
+            ii. number
+                var a = 10;
+                var b = -10;
+                var c = 10.5;
+                console.log(a, b, c)
+            iii. boolean - true or false
+                var isadmin = true;
+                var premiumuser = true;
+                var student = false;
+                console.log(isadmin, premiumuser, student)
+            iv. Unefined
+            v. null - it is intensional absence of a value
+                var emp1 = null;
+                var teamlead = null;
+                console.log(emp1);
+
+        2. Non-Primitive - Which stores the mutable values, which are mutable, whoch are get by reference and post by referrence, stores in heap 
+            i. array - It is used to store collection of data values in a single variable and can be access unsing numbered index
+                It is a homogeneous and hetrogenous
+                Ex: 
+                var arr = [1, 'hello', true, false, null]
+                console.log(arr)
+                console.log(arr[1])
+                console.log(arr[-1]) // undefined
+
+            ii. objects - used to store the data in collection of key value pairs and can be accesssed by named index.
+            eg:
+            var data=[4,25,30]
+              var obj={
+                batchno:4,
+                count:25,
+                days:30,
+                stack:'python'
+              }
+              console.log(obj)
+              obj.stack='python fullstack'
+
+              // 1st dot notation
+              console.log(obj.stack);
+
+              //2nd- sqtare bracket notation
+              console.log(obj['days'])
+
+            iii.functions
+            function greet(){
+            console.log('welcome to the webpage')
+               }
+            greet()
+
+ -->
